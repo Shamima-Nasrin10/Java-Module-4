@@ -4,6 +4,8 @@
  */
 package mathematicalfunction;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Admin
@@ -14,7 +16,14 @@ public class MathematicalFunction {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter any first number");
+        float num1=scanner.nextFloat();
+        System.out.println("Enter any second number");
+        float num2=scanner.nextFloat();
+        
+        
+        
     }
     
 }
