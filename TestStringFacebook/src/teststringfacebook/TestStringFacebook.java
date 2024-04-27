@@ -17,14 +17,16 @@ public class TestStringFacebook {
      */
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter Your User Name ");
-        String userName = s.next();
+         System.out.println("Enter Your User Name ");
+             String userName = s.next();
+       
         System.out.println("Enter Password ");
         String password = s.next();
         String message = String.format("Welcome to Facebook, %s", userName);
 
         if (userName.length() > 3 && userName.length() <= 10) {
-            if (userName.equalsIgnoreCase("Shamima") && password.equals("shamS1234")) {
+           
+            if (userName.equalsIgnoreCase("ShamimaNasrin") && password.equals("shamS1234")) {
                 System.out.println(message);
             } else {
                 System.out.println("Wrong Credentials\nInvalid User Name or Passwprd");
