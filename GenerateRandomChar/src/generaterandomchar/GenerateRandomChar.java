@@ -4,6 +4,7 @@
  */
 package generaterandomchar;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -13,19 +14,35 @@ import java.util.Scanner;
 public class GenerateRandomChar {
 
     public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter Password Length: ");
+        int passLength=s.nextInt();
 
-        int number = (int) (Math.random() * 10);
-        char c = (char) (number + 'a');
-        System.out.println(c);
+        Random random = new Random();
 
-        int number2 = (int) (Math.random() * 10);
-        char C = (char) (number2 + 'A');
-        System.out.println(C);
-        System.out.println(number);
-        String pass=" ";
-        
-        
-        
+        String ranPass = "";
+
+        for (int i = 0; i < passLength; i++) {
+            int range = random.nextInt(3) + 1;
+            if (i==passLength/2) {
+                ranPass += "-";
+            }
+
+            switch (range) {
+                case 1:
+                    ranPass += (char) (random.nextInt(26) + 65);
+                    break;
+                case 2:
+                    ranPass += (char) (random.nextInt(26) + 97);
+                    break;
+                case 3:
+                    ranPass += (char) (random.nextInt(10) + 48);
+                    break;
+                default:
+                    throw new AssertionError();
+            }
+        }
+        System.out.println(ranPass);
     }
 
 }
