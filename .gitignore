@@ -9,6 +9,7 @@
 /Selection59/build/
 /GradeSheet/nbproject/private/
 /GradeSheet/build/
+<<<<<<< HEAD
 /DayName/nbproject/private/
 /DayName/build/
 /LeapYearCalculation/nbproject/private/
@@ -42,3 +43,15 @@
 /PrimeMethodTest2/build/
 /GenerateRandomChar/nbproject/private/
 /GenerateRandomChar/build/
+=======
+/PalindromeWord/nbproject/private/
+/PalindromeWord/build/
+/RandomPassword/nbproject/private/
+/RandomPassword/build/
+>>>>>>> 6f7179458d8f7bf4cfca3a1d008949f45b1d851e
+/PrimeNumberList/nbproject/private/
+/PrimeNumberList/build/
+/ReverseArray/nbproject/private/
+/ReverseArray/build/
+/TwoDArrays/nbproject/private/
+/TwoDArrays/build/
