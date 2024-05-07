@@ -29,7 +29,7 @@ public class BigIntegerFactorial {
         String messege="";
        int count=0;
           for(BigInteger j=BigInteger.ONE; j.compareTo(factorial)<=0; j=j.add(BigInteger.ONE)){
-              if(factorial.mod(j).equals(0)){
+              if(factorial.mod(j).equals(BigInteger.ZERO)){
                   count++;
               }
           }
