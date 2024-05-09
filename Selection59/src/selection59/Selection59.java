@@ -25,10 +25,10 @@ public class Selection59 {
         System.out.println("Enter third number: ");
         int thirdNumber=scanner.nextInt();
         
-        if(firstNumber>secondNumber & firstNumber>thirdNumber){
+        if(firstNumber>secondNumber && firstNumber>thirdNumber){
             maxNumber=firstNumber;
         }
-        else if(secondNumber>firstNumber & secondNumber>thirdNumber){
+        else if(secondNumber>firstNumber && secondNumber>thirdNumber){
             maxNumber=secondNumber;
         }
         else{
