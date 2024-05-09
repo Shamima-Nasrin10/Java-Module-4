@@ -2,7 +2,10 @@ package midmonthlyevidencepractice01;
 
 //import transport.Truck;
 
-import electronicproduct.ElectronicProduct;
+import animaldog.Dog;
+
+
+//import electronicproduct.ElectronicProduct;
 
 public class MidMonthlyEvidencePractice01 {
 
@@ -13,9 +16,14 @@ public class MidMonthlyEvidencePractice01 {
 //        System.out.println(truck.getSalePrice());
 
         
-            ElectronicProduct eproduct=new ElectronicProduct(1, "Laptop", 500);
-            
-            System.out.println("Price: "+eproduct.getSalePrice());
+//            ElectronicProduct eproduct=new ElectronicProduct(1, "Laptop", 500);
+//            
+//            System.out.println("Price: "+eproduct.getSalePrice());
+
+       Dog dog=new Dog("blah");
+       dog.makeSound();
+    
+       
     }
 
 }
