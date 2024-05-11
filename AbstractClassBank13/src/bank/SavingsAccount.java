@@ -55,6 +55,7 @@ public class SavingsAccount extends BankAccount{
 
     @Override
     public void getDeposit() {
+        balance=balance+super.getDepositAmount();
     }
 
     @Override
