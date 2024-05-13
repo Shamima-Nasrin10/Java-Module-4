@@ -3,6 +3,7 @@ package number;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class RandomArray {
@@ -13,5 +14,17 @@ public class RandomArray {
             myArray[i]= random.nextInt(100);
         }
         System.out.println(Arrays.toString(myArray));
+        
+        
+        Scanner scanner=new Scanner(System.in);
+        int sum=0;
+        do{
+            int n=scanner.nextInt();
+            if(n<0){
+                break;
+            }
+            System.out.println("Enter numbers.");
+            
+        }
     }
 }
