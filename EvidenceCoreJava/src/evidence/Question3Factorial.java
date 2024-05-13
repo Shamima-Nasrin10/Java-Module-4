@@ -2,7 +2,7 @@
 package evidence;
 
 
-public class Question3 {
+public class Question3Factorial {
     public static void main(String[] args) {
         int value=5;
         int factorial=1;

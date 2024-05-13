@@ -4,7 +4,7 @@ package evidence;
 import java.util.Scanner;
 
 
-public class Question1 {
+public class Question1Prime {
     public static void main(String[] args) {
         
         Scanner scanner=new Scanner(System.in);
