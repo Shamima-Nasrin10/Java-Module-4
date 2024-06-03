@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<institution>
+    <student>
+        <id> 1 </id>
+        <name>Shamima </name>
+        <faculty>MPH </faculty>        
+    </student>
+        
+    <student>
+        <id> 2 </id>
+        <name> Munira</name>
+        <faculty> FFST</faculty>
+    </student>
+    <student>
+        <id> 3 </id>
+        <name>Rifa </name>
+        <faculty>DVM </faculty>
+    </student>
+</institution>
+
