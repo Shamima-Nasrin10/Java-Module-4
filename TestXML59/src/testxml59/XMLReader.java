@@ -41,12 +41,16 @@ public class XMLReader {
                      System.out.println("Student Faculty: "+faculty);
                  }
              }
-        } catch (ParserConfigurationException ex) {
-            Logger.getLogger(XMLReader.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SAXException ex) {
-            Logger.getLogger(XMLReader.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(XMLReader.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+//        catch (ParserConfigurationException ex) {
+//            Logger.getLogger(XMLReader.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SAXException ex) {
+//            Logger.getLogger(XMLReader.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (IOException ex) {
+//            Logger.getLogger(XMLReader.class.getName()).log(Level.SEVERE, null, ex);
+//        } 
+        catch(Exception e){
+            e.printStackTrace();
         }
     }
     
