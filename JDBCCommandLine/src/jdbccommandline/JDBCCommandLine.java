@@ -29,6 +29,10 @@ public class JDBCCommandLine {
         editData(student);
         showData();
         
+        Student student1=new Student();
+        student1.setId(2);
+        deleteData(student1);
+        
     }
 
     public static void saveData() {
@@ -98,6 +102,23 @@ public class JDBCCommandLine {
             dbUtil.getCon().close();
 
             System.out.println("Edit successful");
+
+        } catch (ClassNotFoundException | SQLException ex) {
+            Logger.getLogger(JDBCCommandLine.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public static void deleteData(Student s) {
+        String sql = "delete from student where id=?";
+
+        try {
+            ps = dbUtil.getCon().prepareStatement(sql);
+            ps.setInt(1, s.getId());
+
+            ps.executeUpdate();
+            ps.close();
+            dbUtil.getCon().close();
+
+            System.out.println("Delete successful");
 
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(JDBCCommandLine.class.getName()).log(Level.SEVERE, null, ex);
