@@ -124,6 +124,25 @@ public class JDBCCommandLine {
             Logger.getLogger(JDBCCommandLine.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+//    public void delData(int id){
+//        String sql = "delete from student where id=?";
+//        
+//        try {
+//            ps = dbUtil.getCon().prepareStatement(sql);
+//            ps.setInt(1, id);
+//            
+//            ps.executeUpdate();
+//            ps.close();
+//            dbUtil.getCon().close();
+//            
+//            System.out.println("Data deleted.");
+//            
+//        } catch (ClassNotFoundException |  SQLException ex) {
+//            Logger.getLogger(JDBCCommandLine.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        
+//    }
 
     public static List<Student> getById(int id) {
         List<Student> studentList = new ArrayList<>();
