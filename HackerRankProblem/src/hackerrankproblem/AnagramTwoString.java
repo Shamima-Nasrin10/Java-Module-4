@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package hackerrankproblem;
 
-/**
- *
- * @author Admin
- */
+import java.util.Scanner;
+
 public class AnagramTwoString {
+    
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter first string");
+        String 
+        System.out.println("Enter second string");
+    }
     
 }
