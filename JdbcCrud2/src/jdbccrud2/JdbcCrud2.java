@@ -20,7 +20,7 @@ public class JdbcCrud2 {
 //        saveStudent("Munira", "munira@gmail.com", "Bangladesh", "4356789");
 //        saveStudent("Mitu", "mitu@gmail.com", "Uk", "4356789");
         showStudent();
-        deleteStudent(2);
+        deleteStudent(3);
         System.out.println("\nAfter Delete\n");
         showStudent();
         updateStudent("Razia", "sultana@gmail.com", "KSA", "9965432", 1);
