@@ -1,3 +1,8 @@
+<%-- 
+    Document   : error
+    Created on : Jul 1, 2024, 3:43:16 PM
+    Author     : Admin
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,6 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-         <a href="employeeaddform.jsp" >Add Student</a>
+        <h1 style="color: red">Data Save Unsuccessful</h1>
+        <%@include  file="employeeaddform.jsp"%>
     </body>
 </html>
