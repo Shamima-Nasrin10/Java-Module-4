@@ -91,4 +91,52 @@ public class EmployeeDao {
         }
         
     }
+    
+    public static void updateEmployee(Employee e){
+        sql="update employee2 set name=?, email=?, address=? where id=?";
+        
+        try {
+            ps=DbUtil.getCon().prepareStatement(sql);
+            
+             ps.setString(1, e.getName());
+            ps.setString(2, e.getEmail());
+            ps.setString(3, e.getAddress());
+            ps.setInt(4, e.getId());
+            
+            ps.executeUpdate();
+            ps.close();
+            DbUtil.getCon().close();
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    public static Employee getById(int id){
+        Employee e=null;
+        
+        sql="select * from employee2 where id=?";
+        
+        try {
+            ps=DbUtil.getCon().prepareStatement(sql);
+            ps.setInt(1, id);
+            
+            rs=ps.executeQuery();
+            
+            while(rs.next()){
+                
+                e=new Employee(
+                        rs.getInt("id"), 
+                        rs.getString("name"), 
+                        rs.getString("email"), 
+                        rs.getString("address"));
+                
+            };
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return e;
+    }
 }

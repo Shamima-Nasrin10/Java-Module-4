@@ -29,7 +29,7 @@ request.setAttribute("empList",empList);
                 <td>${employee.getEmail()}</td>
                 <td>${employee.getAddress()}</td>
                 <td>
-                    <a href="#">Edit</a>
+                    <a href="updateemployeeform.jsp?id=${employee.getId()}">Edit</a>
                     <a href="deleteemployee.jsp?id=${employee.getId()}">Delete</a>
                 </td>
             </tr>

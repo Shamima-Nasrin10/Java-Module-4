@@ -7,8 +7,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-         <a href="employeeaddform.jsp" >Add Student</a> <br><br>
+         <a href="employeeaddform.jsp" >Add Employee</a> <br><br>
          
-         <a href="viewallemployee.jsp" >View All Student</a>
+         <a href="viewallemployee.jsp" >View All Employee</a>
     </body>
 </html>
